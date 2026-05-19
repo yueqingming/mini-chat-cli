@@ -2,8 +2,9 @@ from openai import APIError, AuthenticationError, RateLimitError
 
 from config import MISSING_API_KEY_MESSAGE, get_client, get_model
 
-from lim import chat_stream,chat_once
+from llm import chat_stream,chat_once
 
+from services.history import trim_messages
 
 def main():
     client = get_client()
@@ -58,6 +59,7 @@ def main():
         print()
         reply = "".join(reply_parts)
         messages.append({"role": "assistant", "content": reply})
+        trim_messages(messages)
 
 
 if __name__ == "__main__":
