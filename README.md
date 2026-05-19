@@ -1,4 +1,5 @@
 # mini-chat-cli
+<<<<<<< HEAD
 
 基于 DeepSeek API 的迷你对话项目：支持终端多轮聊天、结构化 JSON 抽取，以及 FastAPI HTTP 接口。
 
@@ -186,3 +187,6 @@ curl -X POST http://127.0.0.1:8000/api/extract \
 ## License
 
 学习与个人作品集用途；使用 API 时请遵守 DeepSeek 服务条款。
+=======
+一个AI部署测试
+>>>>>>> 67026ae0c0b5c2e7e054eb5312b94fd9cd853d97
